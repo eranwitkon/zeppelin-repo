@@ -1,0 +1,138 @@
+{
+  "paragraphs": [
+    {
+      "text": "%hive\nshow tables",
+      "dateUpdated": "Sep 29, 2015 3:12:50 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "tab_name",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "tab_name",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1443442194244_-312854103",
+      "id": "20150928-150954_1800074771",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "tab_name\npage_view\t\n"
+      },
+      "dateCreated": "Sep 28, 2015 3:09:54 PM",
+      "dateStarted": "Sep 29, 2015 3:12:50 PM",
+      "dateFinished": "Sep 29, 2015 3:12:50 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive\nCREATE TABLE page_view(viewTime INT, userid BIGINT,\n                page_url STRING, referrer_url STRING,\n                ip STRING COMMENT \u0027IP Address of the User\u0027)\nCOMMENT \u0027This is the page view table\u0027\nPARTITIONED BY(dt STRING, country STRING)\nSTORED AS SEQUENCEFILE",
+      "dateUpdated": "Sep 29, 2015 3:12:41 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1443442205706_-445794977",
+      "id": "20150928-151005_673342465",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "The query did not generate a result set!"
+      },
+      "dateCreated": "Sep 28, 2015 3:10:05 PM",
+      "dateStarted": "Sep 29, 2015 3:12:41 PM",
+      "dateFinished": "Sep 29, 2015 3:12:42 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive\ndrop table page_view",
+      "dateUpdated": "Sep 29, 2015 3:13:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1443445992284_-18819824",
+      "id": "20150928-161312_716549080",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "The query did not generate a result set!"
+      },
+      "dateCreated": "Sep 28, 2015 4:13:12 PM",
+      "dateStarted": "Sep 29, 2015 3:13:15 PM",
+      "dateFinished": "Sep 29, 2015 3:13:15 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1443528795027_244430584",
+      "id": "20150929-151315_1841067188",
+      "dateCreated": "Sep 29, 2015 3:13:15 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "hive demo",
+  "id": "2B1H13MQG",
+  "angularObjects": {
+    "2AWSES8Z8": [],
+    "2AYUGP2D5": [],
+    "2AY6GV7Q3": [],
+    "2AWBZQVB8": [],
+    "2AWTCSXEX": []
+  },
+  "config": {},
+  "info": {}
+}
